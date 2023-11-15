@@ -1,3 +1,10 @@
+.special {
+    background-color:orangered;
+    border: dotted 10px blueviolet;
+    font-style: italic;
+    color:cornflowerblue;
+}
+
 .minor-section {
     font-size: medium;
     background-color: aquamarine;
@@ -8,10 +15,4 @@ body {
 }
 #content {
     background-color: violet;
-}
-.special {
-    background-color:orangered;
-    font-family: Impact;
-    font-style: italic;
-    color:cornflowerblue;
 }

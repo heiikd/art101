@@ -4,26 +4,37 @@ Author: Heidi Dullack
 Date: November 13, 2023
 */
 
-// add button to challenge section
-$("#challenge").append("<button id='button-challenge'>Click meee!</button>");
-// add a click listener to this button
-$("#button-challenge").click(function(){
-    //now add/subtract the "special" class to the section
-    $("#challenge").toggleClass("special");
+// toggle for special css
+
+$(document).ready(function(){
+    $("#toggleButton").on("click",function(){
+        $("#toggleDiv").toggleClass("special");
+    });
 });
 
-// add button to problems section
-$("#problems").append("<button id='button-problems'>Click meee!!!</button>");
-// add a click listener to the challenge button
-$("button-problems").click(function(){
-    // now add (or subtract) the "special" class to the section
-    $("#problems").toggleClass("special");
-});
+$(document).ready(function(){
 
-// add button to results section
-$("#results").append("<button id='button-resultss'>CLick meeeee!!!!!!</button>");
-// add a click listener to the challenge button
-$("button-challenge").click(function(){
-    // now add (or subtract) the "special" class to the section
-    $("#results").toggleClass("special");
+    // add button to challenge section
+    $("#challenge").append("<button id='challengeButton'>Challenge Button</button>");
+
+    // add button to problems section
+    $("#problems").append("<button id='problemsButton'>Problems Button!!</button>");
+
+    // add button to results section
+    $("#results").append("<button id='resultsButton'>Results Button!!</button>");
+
+    // add an event listener listener to this button
+    $("#challengeButton").on("click", function(){
+        alert("Button clicked!!");
+    });
+
+    // add an event listener listener to this button
+    $("#problemsButton").on("click", function(){
+        alert("Button clicked!!");
+    });
+    
+    // add an event listener listener to this button
+    $("#resultsButton").on("click", function(){
+         alert("Button clicked!!");
+    });
 });
