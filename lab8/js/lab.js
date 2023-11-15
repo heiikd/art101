@@ -20,7 +20,8 @@ var mapResults = numberArray.map(addFour);
 console.log("Results: ", mapResults)
 
 
- //map results data
- var mapResults = "Map Results";
+ // Your map results data
+ var mapResults = "Your map results here";
+
  // Use jQuery to select the element by its ID and set the HTML content
- $("#output").html(mapResults);
+ $("#output").html(mapResults = numberArray.map(addFour));
