@@ -1,0 +1,17 @@
+.minor-section {
+    font-size: medium;
+    background-color: aquamarine;
+    border: dotted 10px lavender;
+}
+body {
+    background-color:rgb(235, 255, 206);
+}
+#content {
+    background-color: violet;
+}
+.special {
+    background-color:orangered;
+    font-family: Impact;
+    font-style: italic;
+    color:cornflowerblue;
+}
