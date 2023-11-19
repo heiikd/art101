@@ -7,6 +7,7 @@ Date: November 2023
 Code belongs to Wes Modes
 */
 
+
 function generateRandomText() {
     const text = "When you were here before Couldn't look you in the eye You're just like an angel Your skin makes me cry  You float like a feather  In a beautiful world   I wish I was special  You're so fuckin' special But I'm a creep I'm a weirdo What the hell am I doin' here? I don't belong here I don't care if it hurts I wanna have control I want a perfect body I want a perfect soul I want you to notice When I'm not around So fuckin' special I wish I was special But I'm a creep I'm a weirdo What the hell am I doin' here? I don't belong here She's running out the door (run) She's running out She run, run, run, run Run Whatever makes you happy Whatever you want You're so fuckin' special I wish I was special But I'm a creep I'm a weirdo What the hell am I doin' here? I don't belong here I don't belong here";
     const min = 4;
@@ -19,7 +20,7 @@ function generateRandomText() {
 }
 
 //add a click listener for the button
-$("#make-convo").on("click", function(){
+$("#button").on("click", function(){
 });
 
 // get new fake dialogue
@@ -27,3 +28,4 @@ const newText = generateRandomText();
 
 //append a div to our new output div
 $("#output").append('<div class="text"><p>' + newText + '</p></div>')
+
