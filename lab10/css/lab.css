@@ -1,0 +1,12 @@
+.minor-section {
+    font-size: medium;
+    font-family: cursive;
+    background-color: aquamarine;
+    border: dotted 10px lavender;
+}
+body {
+    background-color:rgb(235, 255, 206);
+}
+#content {
+    background-color: violet;
+}
