@@ -9,3 +9,29 @@ body {
 #content {
     background-color: violet;
 }
+
+.new-section {
+    background-color: aliceblue;
+
+    .text {
+        margin-bottom: 10px; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .text p {
+        padding: 10px;
+        border-radius: 8px;
+    }
+  
+    .text:nth-child(odd) p {
+        padding-left: 15px;
+        background-color: #989d9e; 
+        text-align: left;
+    }
+  
+    .text:nth-child(even) p {
+        padding-right: 15px;
+        background-color: #2989ea; 
+        text-align: right;
+    }
+}
