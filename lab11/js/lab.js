@@ -23,3 +23,12 @@ userNameSorted = sortString(userName);
 //append a new div to our output div
 $("#output").html('<div class="text"><p>' + userNameSorted + '</p></div>'); 
 });
+
+ // add a click listener to the Glitch button
+ $("#glitchButton").click(function() {
+    // Add a glitch effect (for demonstration purposes)
+    $("body").css("overflow", "hidden");
+    $("body").css("background-color", "black");
+    $("body").css("color", "white");
+    $("body").fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+ });
