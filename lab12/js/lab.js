@@ -11,16 +11,16 @@ function sortingHat(str) {
     var length = str.length;
     var mod = length % 4;
     if (mod == 0) {
-        return "Gryffindor"
+        return "Gryffindor!" + " Traits: brave, daring, courageous, determined"
     }
     else if (mod == 1) {
-        return "Ravenclaw"
+        return "Ravenclaw!" + " Traits: wise, witty, innovative, academic"
     }
     else if (mod == 2) {
-        return "Slytherin"
+        return "Slytherin!" + " Traits: ambitious, shrewd, prideful, closed off"
     }
     else if (mod == 3) {
-        return "Hufflepuff"
+        return "Hufflepuff!" + " Traits: trustworthy, humble, hardworking, loyal"
     }
 }
 
