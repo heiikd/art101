@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<script src="index.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highlighted Image</title>
+  <style>
+    /* Container to hold the image and highlight overlays */
+    .image-container {
+      position: relative;
+      width: 600px; /* Adjust the width as needed */
+    }
+
+    /* Style for the highlight overlay */
+    .highlight {
+      position: absolute;
+      border: 2px solid red; /* Adjust the border color */
+      background-color: rgba(255, 0, 0, 0.3); /* Adjust the background color and opacity */
+    }
+  </style>
 </head>
-	<h1 id="title">Haiiii :3</h1>
-	<input type="text" id="input"/>
-	<button id="my-button">Click meeee</button>
+<body>
+
+<div class="image-container">
+  <!-- Your image goes here -->
+  <img src="/Users/heipi/Documents/GitHub/art101/experiments/img/usmap.jpg" alt="Your Image">
+
+  <!-- Highlight overlay for the first area -->
+  <div class="highlight" style="top: 200px; left: 500px; width: 200px; height: 80px;"></div>
+
+  <!-- Highlight overlay for the second area -->
+
+</body>
 </html>
