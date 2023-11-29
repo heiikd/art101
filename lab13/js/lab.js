@@ -25,6 +25,11 @@ function fizzbuzz() {
         if (num % 7 === 0) {
             output += "Boom";
         }
+
+        if (num % 10 === 0) {
+            output += "Bam";
+        }
+
         //
         if (output === "") {
             output = num;
