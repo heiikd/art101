@@ -6,11 +6,6 @@ Date: November 13, 2023
 
 // toggle for special css
 
-$(document).ready(function(){
-    $("#toggleButton").on("click",function(){
-        $("#toggleDiv").toggleClass("special");
-    });
-});
 
 $(document).ready(function(){
 
@@ -26,16 +21,19 @@ $(document).ready(function(){
     // add an event listener listener to this button
     $("#challengeButton").on("click", function(){
         alert("Button clicked!!");
+        $("#toggleDiv").toggleClass("special");
     });
 
     // add an event listener listener to this button
     $("#problemsButton").on("click", function(){
         alert("Button clicked!!");
+        $("#toggleDiv").toggleClass("special");
     });
     
     // add an event listener listener to this button
     $("#resultsButton").on("click", function(){
          alert("Button clicked!!");
+         $("#toggleDiv").toggleClass("special");
     });
 });
 
