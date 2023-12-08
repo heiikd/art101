@@ -1,34 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Highlighted Image</title>
-  <style>
-    /* Container to hold the image and highlight overlays */
-    .image-container {
-      position: relative;
-      width: 600px; /* Adjust the width as needed */
-    }
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Extinction Timeline</title>
 
-    /* Style for the highlight overlay */
-    .highlight {
-      position: absolute;
-      border: 2px solid red; /* Adjust the border color */
-      background-color: rgba(255, 0, 0, 0.3); /* Adjust the background color and opacity */
-    }
-  </style>
+	<!-- Use UTF character set, a good idea with any webpage -->
+	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+
+	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Load animation library -->
+	<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<script type="text/javascript" src="./js/lab.js" DEFER></script>
 </head>
+
 <body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	<main id="content">
+		<section>
+			<div id="overlay">
+				<h1 id="heading">Extinction Map Timeline</h1>
+				<p> Map of extinct and invasive species' distribution in the U.S. over time. <br><br> Select a species
+					to view from the list on the left.<br><br> Adjust the year displayed with the slider below.</p>
+				<button class="start">Begin</button>
+			</div>
+		</section>
 
-<div class="image-container">
-  <!-- Your image goes here -->
-  <img src="/Users/heipi/Documents/GitHub/art101/experiments/img/usmap.jpg" alt="Your Image">
+		<!-- US map image-->
+		<div class="map"><img class="us-map" src="./img/1900.png"></div>
 
-  <!-- Highlight overlay for the first area -->
-  <div class="highlight" style="top: 200px; left: 500px; width: 200px; height: 80px;"></div>
 
-  <!-- Highlight overlay for the second area -->
+		<div class="sidenav">
+			<a href="#" animal= "0" id="anm1">California Condor</a>
+			<a href="#" animal="1" id="anm2">Gray Wolf</a>
+			<a href="#" animal="2" id="anm3">San Joaquin Kit Fox</a>
+			<a href="#" animal="3" id="anm4">Franklin's Bumblebee</a>
+			<a href="#" animal="4" id="anm5">Lionfish</a>
+			<a href="#" animal="5" id="anm6">Zebra Mussel</a>
+		</div>
 
+		<div id="infoContainer">
+			<p id="anmDesc"></p>
+			<div id="infoText">
+			</div>
+		</div>
+
+		<div class="navSlider">
+			<input id="slider" type="range" min="0" max="4" value="0">
+			<div id="slideryear">1900</div>
+		</div>
+	</main>
 </body>
+
 </html>

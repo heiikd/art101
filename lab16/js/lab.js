@@ -4,7 +4,7 @@
  // Function to fetch XKCD comic by number
  function fetchComic(comicNumber) {
     $.ajax({
-        url: `https://xkcd.com/${comicNumber}/info.0.json`,
+        url: `https://xkcd.com/${comicNumber}info.0.json`,
         method: "GET",
         dataType: "json",
         success: function(data) {
@@ -14,7 +14,7 @@
                 <img src="${data.img}" alt="${data.alt}" style="max-width: 100%; height: auto;">
                 <p>${data.alt}</p>
             `;
-            // Display the HTML content in the output div
+            // Display the HTML content
             $("#output").html(outputHtml);
         },
         error: function(xhr, status, error) {
